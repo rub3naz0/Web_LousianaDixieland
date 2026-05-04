@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Louisiana Dixieland — Música dixie en estado puro</title>
+<meta name="description" content="Louisiana Dixieland — formación de hot jazz al estilo Nueva Orleans para desfiles, pasacalles, conciertos y eventos.">
+<script>
+  // WebP support detection — runs before <body> renders.
+  // Adds class "webp" or "no-webp" to <html> and exposes window.SCROLL_EXT for JS preloading.
+  (function () {
+    var c = document.createElement('canvas');
+    var supported = !!(c.getContext && c.getContext('2d')) &&
+      c.toDataURL && c.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+    document.documentElement.classList.add(supported ? 'webp' : 'no-webp');
+    window.SCROLL_EXT = supported ? 'webp' : 'png';
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bowlby+One+SC&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#0e2240"/><circle cx="50" cy="50" r="28" fill="none" stroke="#c8202a" stroke-width="3"/><text x="50" y="58" text-anchor="middle" font-family="serif" font-weight="700" font-size="18" fill="#0e2240" style="paint-order:stroke;stroke:#fff;stroke-width:2">LD</text></svg>
+</template>
+
+<link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+<button class="skip-intro" id="skipIntro" aria-label="Saltar intro">Saltar intro</button>
+
+<!-- =================== HERO =================== -->
+<section class="hero" id="hero" data-screen-label="01 Hero">
+  <div class="banner tl" aria-hidden="true"><picture><source srcset="assets/banner_tl.webp" type="image/webp"><img src="assets/banner_tl.png" alt=""></picture></div>
+  <div class="banner tr" aria-hidden="true"><picture><source srcset="assets/banner_tr.webp" type="image/webp"><img src="assets/banner_tr.png" alt=""></picture></div>
+  <div class="banner bl" aria-hidden="true"><picture><source srcset="assets/banner_bl.webp" type="image/webp"><img src="assets/banner_bl.png" alt=""></picture></div>
+  <div class="banner br" aria-hidden="true"><picture><source srcset="assets/banner_br.webp" type="image/webp"><img src="assets/banner_br.png" alt=""></picture></div>
+
+  <div class="hero-stack">
+    <div class="logo-wrap">
+      <picture>
+        <source srcset="assets/circle_logo.webp" type="image/webp">
+        <img class="circle" src="assets/circle_logo.png" alt="Louisiana Dixieland">
+      </picture>
+    </div>
+  </div>
+
+  <div class="hero-tagline">
+    <div class="line">Música dixie en</div>
+    <div class="line">estado puro<span class="dots">..........</span></div>
+  </div>
+
+</section>
+
+<!-- =================== BODY: silueta sticky a la izquierda + secciones a la derecha =================== -->
+<div class="body-wrap">
+  <div class="scroll-stage">
+
+    <!-- Sticky silhouette -->
+    <aside class="sticky-silhouette" aria-hidden="true">
+      <div class="silhouette-stack" id="silhouetteStack">
+        <div class="frame" id="silhouetteFrame">
+          <!-- 21 imágenes superpuestas. JS pone la activa según scroll. -->
+        </div>
+      </div>
+    </aside>
+
+    <!-- Contenido -->
+    <div class="content-col">
+
+      <section class="panel quote-panel" data-screen-label="02 Frase">
+        <div class="reveal">
+          <p class="eyebrow">Hot Jazz · Nueva Orleans · Second Line</p>
+          <h2 class="display">
+            <span class="red">Música dixie</span><br>
+            <span class="blue">en estado puro.</span>
+          </h2>
+          <p class="lede">
+            Louisiana Dixieland no solo basa su repertorio en la música tradicional de Nueva Orleans sino que incorpora temas actuales adaptados al jazz de los años 20, como es el estilo Second Line creando así espectáculos únicos e irrepetibles.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel dark" data-screen-label="03 Origen">
+        <div class="reveal">
+          <p class="eyebrow">El origen</p>
+          <h2 class="display"><em>Dixieland.</em></h2>
+          <p class="body-text" style="margin-top:1.6rem">
+            El término <strong>«Dixieland»</strong> se utilizaba para referirse coloquialmente
+            a los estados confederados de América y surgió a raíz de los billetes
+            de diez dólares impresos por un banco de Nueva Orleans que incluían
+            la palabra <em>«Dix»</em> — <strong>diez</strong> en francés.
+          </p>
+          <p class="body-text">
+            Dixieland era pues la tierra del «Dixie» y hacía referencia a la región
+            de donde provenía el billete: <strong>Louisiana</strong>. 
+           </p>
+          <p class="body-text">Pronto su música
+            adoptaría este nombre y se convertiría en un popular estilo de música
+            callejera, herencia de las bandas militares que desfilaban interpretando
+            ritmos asincopados e improvisaciones.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel" data-screen-label="04 Banda">
+        <div class="reveal">
+          <p class="eyebrow">Sobre nosotros</p>
+          <h2 class="display">Louisiana<br><em>Dixieland.</em></h2>
+        </div>
+        <div class="reveal" style="margin-top:2rem">
+          <p class="body-text" style="font-size:clamp(1.05rem,1.4vw,1.2rem)">
+            Louisiana Dixieland es una formación jazzística compuesta principalmente
+            por <strong>cinco instrumentos</strong> y <strong>seis componentes</strong>:
+            percusión, tuba, trombón, trompeta y saxofón. Nace de las inquietudes de un
+            grupo de amigos por promover las raíces de la música callejera americana
+            del siglo&nbsp;XX.
+          </p>
+          <p class="body-text">
+            A través de este estilo <strong>«hot jazz»</strong> con sus ritmos e
+            improvisaciones, creamos espectáculos que van desde <em>desfiles y
+            pasacalles</em> hasta <em>conciertos y eventos festivos</em>. No solo
+            basamos nuestro repertorio en la música tradicional de Nueva Orleans:
+            incorporamos temas actuales adaptados al jazz de los años 20, como
+            es el estilo <strong>Second Line</strong>, creando así espectáculos únicos
+            e irrepetibles.
+          </p>
+        </div>
+      </section>
+
+      <section class="panel" data-screen-label="06 Repertorio">
+        <div class="reveal">
+          <p class="eyebrow">Repertorio</p>
+          <h2 class="display">Seis músicos.<br><em>Una banda.</em></h2>
+        </div>
+        <div class="members reveal-stagger">
+          <article class="member">
+            <div class="photo"><picture><source srcset="assets/musicos/dani.webp" type="image/webp"><img src="assets/musicos/dani.jpg" alt="Dani Felipe" loading="lazy"></picture></div>
+            <div class="body-card"><p class="role">Trompeta</p><h3 class="name">Dani Felipe</h3></div>
+          </article>
+          <article class="member">
+            <div class="photo"><picture><source srcset="assets/musicos/borja.webp" type="image/webp"><img src="assets/musicos/borja.jpg" alt="Borja Heredero" loading="lazy"></picture></div>
+            <div class="body-card"><p class="role">Trombón</p><h3 class="name">Borja Heredero</h3></div>
+          </article>
+          <article class="member">
+            <div class="photo"><picture><source srcset="assets/musicos/adri.webp" type="image/webp"><img src="assets/musicos/adri.jpg" alt="Adri Panadero" loading="lazy"></picture></div>
+            <div class="body-card"><p class="role">Percusión</p><h3 class="name">Adri Panadero</h3></div>
+          </article>
+          <article class="member">
+            <div class="photo"><picture><source srcset="assets/musicos/jesus.webp" type="image/webp"><img src="assets/musicos/jesus.jpg" alt="Jesús Serrano" loading="lazy"></picture></div>
+            <div class="body-card"><p class="role">Saxo</p><h3 class="name">Jesús Serrano</h3></div>
+          </article>
+          <article class="member">
+            <div class="photo"><picture><source srcset="assets/musicos/joseba.webp" type="image/webp"><img src="assets/musicos/joseba.jpg" alt="Joseba Moncho" loading="lazy"></picture></div>
+            <div class="body-card"><p class="role">Tuba</p><h3 class="name">Joseba Moncho</h3></div>
+          </article>
+          <article class="member">
+            <div class="photo"><picture><source srcset="assets/musicos/alvar.webp" type="image/webp"><img src="assets/musicos/alvar.jpg" alt="Alvar Grijelmo" loading="lazy"></picture></div>
+            <div class="body-card"><p class="role">Percusión</p><h3 class="name">Alvar Grijelmo</h3></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel dark" data-screen-label="07 Contacto">
+        <div class="reveal">
+          <p class="eyebrow">Contratación</p>
+          <h2 class="display">Hablemos de<br><em>tu evento.</em></h2>
+          <p class="lede" style="color:rgba(244,236,216,0.85)">
+            Bodas, ferias, festivales, pasacalles… Nos adaptamos a cualquier formato
+            donde el dixieland tenga algo que decir.
+          </p>
+        </div>
+        <div class="contact-grid reveal">
+          <a class="contact-link" href="/cdn-cgi/l/email-protection#83efecf6eaf0eae2ede2e7eafbeae6efe2ede7c3e4eee2eaefade0ecee">
+            <div class="lab">Email</div>
+            <div class="val"><span class="__cf_email__" data-cfemail="b9d5d6ccd0cad0d8d7d8ddd0c1d0dcd5d8d7ddf9ded4d8d0d597dad6d4">louisianadixieland@gmail.com</span></div>
+          </a>
+          <a class="contact-link" href="tel:+34605036547">
+            <div class="lab">Teléfono</div>
+            <div class="val">605 03 65 47</div>
+          </a>
+        </div>
+        <div class="socials reveal" aria-label="Redes sociales">
+          <span class="lab">Síguenos</span>
+          <a class="social" href="https://www.facebook.com/louisianadixieland/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.87.24-1.46 1.49-1.46H16.5V4.42c-.27-.04-1.2-.12-2.27-.12-2.25 0-3.79 1.37-3.79 3.89V10.5H8v3h2.44V21h3.06z"/></svg>
+          </a>
+          <a class="social" href="https://www.instagram.com/louisianadixieland/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a class="social" href="https://www.youtube.com/@jesusserranovalero/videos" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.76-1.77C18.27 5 12 5 12 5s-6.27 0-7.84.43A2.5 2.5 0 0 0 2.4 7.2 26.2 26.2 0 0 0 2 12a26.2 26.2 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.76 1.77C5.73 19 12 19 12 19s6.27 0 7.84-.43a2.5 2.5 0 0 0 1.76-1.77A26.2 26.2 0 0 0 22 12a26.2 26.2 0 0 0-.4-4.8zM10 15V9l5.2 3-5.2 3z"/></svg>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="stripes"></div>
+  <div>LOUISIANA DIXIELAND · HOT JAZZ · NEW ORLEANS</div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+const _ROerr = "ResizeObserver loop";
+window.addEventListener('error', (e) => {
+  if (e.message && e.message.indexOf(_ROerr) !== -1) { e.stopImmediatePropagation(); e.preventDefault(); return false; }
+}, true);
+(() => {
+  // ----- Intro hero animation kickoff -----
+  const hero = document.getElementById('hero');
+  const heroImgs = hero.querySelectorAll('img');
+  let loaded = 0;
+  const ready = () => hero.classList.add('is-ready');
+  heroImgs.forEach(img => {
+    if (img.complete) { if (++loaded === heroImgs.length) ready(); }
+    else img.addEventListener('load', () => { if (++loaded === heroImgs.length) ready(); });
+  });
+  setTimeout(ready, 800);
+
+  // Skip intro
+  const skip = document.getElementById('skipIntro');
+  skip.addEventListener('click', () => {
+    document.querySelectorAll('.hero .banner, .hero .logo-wrap, .hero-tagline, .scroll-cue')
+      .forEach(el => { el.style.animation = 'none'; el.style.transition = 'none'; });
+    document.querySelector('.hero .banner.tl').style.transform = 'translate(0,0)';
+    document.querySelector('.hero .banner.tr').style.transform = 'translate(0,0)';
+    document.querySelector('.hero .banner.bl').style.transform = 'translate(0,0)';
+    document.querySelector('.hero .banner.br').style.transform = 'translate(0,0)';
+    document.querySelector('.hero .logo-wrap').style.transform = 'translate(0,0)';
+    document.querySelector('.hero .logo-wrap').style.opacity = '1';
+    document.querySelector('.hero-tagline').style.opacity = '1';
+    document.querySelector('.hero-tagline').style.transform = 'translateY(0)';
+    document.querySelector('.scroll-cue').style.opacity = '.85';
+    skip.classList.add('gone');
+  });
+  setTimeout(() => skip.classList.add('gone'), 3500);
+
+  // ----- Reveal on scroll -----
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+
+  // ----- Sticky silhouette: 21 stacked images, swap by scroll -----
+  const TOTAL = 21;
+  const frame = document.getElementById('silhouetteFrame');
+  const imgEls = [];
+  for (let i = 0; i < TOTAL; i++) {
+    const im = document.createElement('img');
+    im.src = `assets/scroll/img${i}.${SCROLL_EXT}`;
+    im.alt = '';
+    im.loading = i < 4 ? 'eager' : 'lazy';
+    im.decoding = 'async';
+    if (i === 0) im.classList.add('is-active');
+    frame.appendChild(im);
+    imgEls.push(im);
+  }
+  const stage = document.querySelector('.body-wrap');
+  let activeIdx = 0;
+
+  function updateSilhouette() {
+    if (!stage) return;
+    const rect = stage.getBoundingClientRect();
+    const vh = window.innerHeight;
+    // progress = how much of the body-wrap has scrolled past the top of viewport,
+    // scaled so 0 = top of body-wrap aligns with top of viewport, 1 = bottom of body-wrap reaches bottom of viewport.
+    const total = stage.offsetHeight - vh;
+    const scrolled = -rect.top;
+    let p = total > 0 ? scrolled / total : 0;
+    p = Math.max(0, Math.min(1, p));
+    const idx = Math.min(TOTAL - 1, Math.floor(p * TOTAL));
+    if (idx !== activeIdx) {
+      imgEls[activeIdx].classList.remove('is-active');
+      imgEls[idx].classList.add('is-active');
+      activeIdx = idx;
+    }
+  }
+
+  // ----- Progress bar -----
+  const bar = document.getElementById('progressBar');
+  function updateProgress() {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    const p = max > 0 ? (window.scrollY / max) * 100 : 0;
+    bar.style.setProperty('--p', p + '%');
+  }
+
+  let ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      updateSilhouette();
+      updateProgress();
+      ticking = false;
+    });
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  onScroll();
+})();
+</script>
+
+</body>
+</html>
